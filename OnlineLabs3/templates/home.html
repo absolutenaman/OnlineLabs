@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oxanium|Varela+Round&display=swap" rel="stylesheet">
+    <title>code cloud</title>
+    <style>
+        .text {
+            color: #00adb5;
+            font-size: 50px;
+        }
+        .text2{
+            color: #ffffff;
+        }
+
+        .nav {
+            background-color: #222831;
+            height: 70px;
+        }
+
+        .myButton {
+            background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+            background-color: #ffffff;
+            border-radius: 28px;
+            border: 1px solid #00c4ff;
+            display: inline-block;
+            cursor: pointer;
+            color: #00adb5;
+            font-family: Arial;
+            font-size: 17px;
+            padding: 16px 31px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #00ccff;
+        }
+
+        .myButton:hover {
+            background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+            background-color: #ffffff;
+        }
+
+        .myButton:active {
+            position: relative;
+            top: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="text logo" style="font-family:Varela Round">Code Cloud</div>
+        <a href="login-sign-page"><button class="myButton" style="float: right; margin-top: -57px; margin-right: 20px;">login</button></a>
+    </nav>
+    <div class="wrapper">
+        <div class="block_one back" style="background-image: url(../static/images/GamingLP2.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; width:100%;position:absolute;left:0;">
+            <div class="text_one text2">COMPILE ONLINE<br>
+                <div class="sub_text_one text2">An IDE for your labs.<br><br>
+                    <a href="/run-now"><button class="myButton">Code Now</button></a>
+                </div>
+            </div>
+            <img src="{{url_for('static',filename='images/ide.PNG')}}" class="img1" style="float:right; margin-top: 175px; margin-right:100px;">
+        </div>
+
+
+        <div class="block_two">
+            <div class="text_two">NOW MAKE YOUR LABS MORE PRODUCTIVE AND FRUITFUL</div>
+            <div class="sub_text_two">Work efficiently during your labs and keep track of your records. </div>
+            <img src="{{url_for('static',filename='images/stu.jpg')}}"
+                style="width:580px;height:590px;margin-left:50%;margin-top:-190px;">
+        </div>
+
+
+        <div class="block_three" style="background-color: #e4f9f5">
+            <div class="text_three">Now Teachers can manage labs easily and efficiently.</div>
+            <div class="sub_text_three">Keep track of your students progress and train them effectively.</div>
+            <img src="{{url_for('static',filename='images/tea.jpg')}}"
+                style="width:580px;height:500px;position:absolute;top:100px;left:40px;">
+
+        </div>
+    </div>
+    <footer>
+        <div class="txt">Created By <br />Naman,Ruapm,Rahul,Aditi</div>
+    </footer>
+</body>
+
+</html>

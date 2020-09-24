@@ -1,0 +1,6 @@
+Pupil 
+1372
+ (max. pupil,  1372)
+pupil, 
+1372
+contribution=0
